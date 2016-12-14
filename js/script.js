@@ -6,7 +6,7 @@ map = new L.Map('map', {
 	minZoom: 8,
 	maxZoom: 12,
 	zoom: 8,
-	center: [-1.23658001422882, -77.6232070922852]
+	center: [-0.5, -79]
 })
 osm.addTo(map)
 
