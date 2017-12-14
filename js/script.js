@@ -73,7 +73,8 @@ function pointsInCircle(circle, meters_user_set) {
 				counter_points_in_circle += 1;
 
 				var ofi_paf_html = '<h4>' + counter_points_in_circle + '. ' + layer.feature.properties.oficina + '</h4>';
-				ofi_paf_html += 'Distance: ' + distance_from_layer_circle.toFixed(2) + ' miles';
+				// Convert to miles
+				ofi_paf_html += 'Distance: ' + (distance_from_layer_circle * 0.000621371).toFixed(2) + ' miles';
 
 				$('#ofi_paf').append(ofi_paf_html);
 			}
